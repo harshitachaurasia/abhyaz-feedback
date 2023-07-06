@@ -38,8 +38,6 @@ The project can be deployed to hosting platforms such as Netlify or Render. Foll
 
 Contributions are welcome! If you have any ideas for improvements or bug fixes, feel free to submit a pull request or open an issue.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
 
 
