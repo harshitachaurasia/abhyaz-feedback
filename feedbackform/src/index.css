@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+  background: #131313;
+}
+p,
+li {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.login-box {
+  height: 100%;
+  width: 100%;
+  color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.6rem;
+}
+.login-box h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.login-box p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  max-width: 75ch;
+  color: #fff;
+  text-align: left;
+}
+.login-box form {
+  max-width: 1000px;
+  width: 70%;
+  padding: 4rem;
+  background: linear-gradient( to bottom right,  rgba(7,7,9,1) 6.5%, rgb(1, 0, 43) 50%,rgba(7,7,9,1) 99.5% );
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+form .ele-container {
+  position: relative;
+}
+
+form .ele-container input[type=text],
+form .ele-container input[type=email] {
+  width: 100%;
+  font-size: 16px;
+  padding: 1rem 0;
+  margin-bottom: 1.8rem;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+form .ele-container textarea{
+    padding: 1rem;
+    width: 70%;
+    height:10rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+    color: #fff;
+    border: 1px solid #d8d8d8;
+    background: transparent;
+    margin-inline: 1.5rem 0;  
+}
+form .ele-container label {
+  padding: 1rem 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  text-align: left;
+  width: 100%;
+}
+form .ele-container,
+form ul.ele-container{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    
+}
+form .ele-container p,
+form ul.ele-container p{
+    width: 100%;
+    align-self: flex-start;
+    text-align: left;
+    padding-block: 1rem;
+    font-size: 1.8rem;
+}
+form ul.ele-container p i{
+    font-size: 1.5rem;
+    color: #999;
+}
+.ele-container label b,
+.ele-container p b,
+form ul.ele-container p b{
+    font-size: 1.7rem;
+    color: #d00;
+}
+form ul.ele-container li{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 1.5rem 0;
+}
+form input[type=checkbox],
+form input[type=radio]{
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
+
+.ta-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 1.5rem 0;
+    contain: style;
+    margin-bottom: 5rem;
+}
+.ta-wrapper{
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+form .ele-container .ta-wrapper .pls-spfy{
+    width: fit-content;
+    width: 30ch;
+    padding-right: 1rem;
+    display: r;
+    align-items: center;
+    justify-content: flex-start;
+}
+form .ele-container .ta-wrapper input[type=text]{
+    border: 2px solid #d8d8d8;
+    padding-inline: 1rem;
+}
+.btn{
+    background: none;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    font-weight:400 ;
+    text-transform: uppercase;
+    color: #f9f9f9;
+    border: 1.5px solid #f8f8f8;
+    letter-spacing: 0.2rem;
+}
+.btn:hover{
+    background: #f9f9f9;
+    color: #333;
+    border: 1.5px solid #f8f8f8;
+}
+@media screen and (max-width:950px) {
+    
+    .login-box form {
+       max-width: 100%;
+       width: 100%;
+       padding: 1rem;
+      }
+      form .ele-container textarea{
+        
+        width: 80%; 
+    }
+      .ta-container{
+        margin-bottom: 10rem;
+      }
+      .ta-wrapper{
+        flex-direction: column;
+        position: absolute;
+        padding-top: 0;
+        top: 0%;
+        left: 11%;
+    }
+    form .ele-container .ta-wrapper input[type=text]{
+        height: 10rem;
+        align-items: start;
+    }
+    }
